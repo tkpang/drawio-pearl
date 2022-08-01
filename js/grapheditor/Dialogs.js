@@ -707,7 +707,9 @@ var EditDiagramDialog = function(editorUi)
 		// Removes all illegal control characters before parsing
 		var data = Graph.zapGremlins(mxUtils.trim(textarea.value));
 		var error = null;
-		
+		// ptk get data xml
+		Console.log(mxUtils.parseXml(data))
+
 		if (select.value == 'new')
 		{
 			editorUi.hideDialog();
