@@ -709,7 +709,7 @@ var EditDiagramDialog = function(editorUi)
 		var error = null;
 		// ptk get data xml
 		Console.log(mxUtils.parseXml(data))
-
+		mxUtils.alert(mxUtils.parseXml(data).documentElement);
 		if (select.value == 'new')
 		{
 			editorUi.hideDialog();
